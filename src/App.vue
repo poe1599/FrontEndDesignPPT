@@ -6,6 +6,8 @@
 <template>
   <div class="reveal">
     <div class="slides">
+      <ChapterBoxModel></ChapterBoxModel>
+
       <RevealSectionExample></RevealSectionExample>
 
       <section data-markdown data-separator="------" data-separator-vertical="----">
@@ -31,16 +33,20 @@ export default {
 <script setup>
 // reveal
 import reveal from 'reveal.js'
+import RevealHighlight from 'reveal.js/plugin/highlight/highlight.js'
 import Markdown from 'reveal.js/plugin/markdown/markdown.js'
 // vue
 import { onMounted } from 'vue'
 import RevealSectionExample from './components/RevealSectionExample.vue'
+// chapters
+import ChapterBoxModel from '@/chapters/boxModel/index.vue'
 
 onMounted(async () => {
   reveal.initialize({
     hash: true,
-
-    plugins: [Markdown],
+    width: 1920,
+    height: 1080,
+    plugins: [Markdown, RevealHighlight],
   })
 })
 </script>
