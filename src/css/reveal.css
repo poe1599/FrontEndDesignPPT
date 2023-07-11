@@ -1,0 +1,5 @@
+/* 覆蓋 reveal.css */
+
+:root {
+  --r-heading-text-transform: none;
+}

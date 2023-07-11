@@ -18,7 +18,7 @@
         </div>
 
         <div class="flex flex-col justify-center">
-          <div>
+          <div class="cssDemo">
             .box {<br />
             &ensp;&ensp;<label>width:</label><input v-model="data.width" type="text" /><br />
             &ensp;&ensp;<label>height:</label><input v-model="data.height" type="text" /><br />
@@ -65,6 +65,22 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="text-center">
+        <div class="relative boxWrap inline-block">
+          <div class="box" :style="data"></div>
+          <div class="box" :style="data"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="text-center">
+        <div class="relative boxWrap inline-block">
+          <div class="box inline-block" :style="data"></div>
+          <div class="box inline-block" :style="data"></div>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 <script>
@@ -84,10 +100,11 @@ const data = reactive({
 })
 </script>
 <style lang="scss" scoped>
+@import '@/scss/tool';
+
 .boxWrap {
   width: fit-content;
   background: #f9cc9d;
-  border: 1px solid transparent;
 }
 
 .box {
@@ -102,12 +119,6 @@ const data = reactive({
     background: #8cb6c0;
     content: '';
   }
-}
-
-input,
-select {
-  margin-left: 16px;
-  background: transparent;
 }
 
 h3 {

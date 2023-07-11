@@ -7,6 +7,7 @@
   <div class="reveal">
     <div class="slides">
       <ChapterBoxModel></ChapterBoxModel>
+      <ChapterPosition></ChapterPosition>
 
       <RevealSectionExample></RevealSectionExample>
 
@@ -40,6 +41,7 @@ import { onMounted } from 'vue'
 import RevealSectionExample from './components/RevealSectionExample.vue'
 // chapters
 import ChapterBoxModel from '@/chapters/boxModel/index.vue'
+import ChapterPosition from '@/chapters/position/index.vue'
 
 onMounted(async () => {
   reveal.initialize({
