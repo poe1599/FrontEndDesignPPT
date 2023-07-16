@@ -3,6 +3,9 @@
     <section>
       <h2>盒模型 Box Model</h2>
     </section>
+
+    <demoPage></demoPage>
+
     <section>
       <h3>盒模型 Box Model</h3>
       <div class="flex justify-center gap-16 text-left">
@@ -90,6 +93,8 @@ export default {
 </script>
 <script setup>
 import { reactive } from 'vue'
+import demoPage from './demoPage.vue'
+
 const data = reactive({
   boxSizing: 'border-box',
   width: '600px',
@@ -119,9 +124,5 @@ const data = reactive({
     background: #8cb6c0;
     content: '';
   }
-}
-
-h3 {
-  margin-bottom: 64px;
 }
 </style>
