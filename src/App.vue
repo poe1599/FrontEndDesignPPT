@@ -6,9 +6,13 @@
 <template>
   <div class="reveal">
     <div class="slides">
+      <section>
+        <h1>簡易 HTML 與 CSS</h1>
+      </section>
       <ChapterBoxModel></ChapterBoxModel>
       <ChapterElement></ChapterElement>
       <ChapterPosition></ChapterPosition>
+      <ChapterPitfalls></ChapterPitfalls>
 
       <RevealSectionExample></RevealSectionExample>
 
@@ -43,6 +47,7 @@ import RevealSectionExample from './components/RevealSectionExample.vue'
 // chapters
 import ChapterBoxModel from '@/chapters/boxModel/index.vue'
 import ChapterElement from '@/chapters/element/index.vue'
+import ChapterPitfalls from '@/chapters/pitfalls/index.vue'
 import ChapterPosition from '@/chapters/position/index.vue'
 
 onMounted(async () => {
