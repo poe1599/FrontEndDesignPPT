@@ -9,14 +9,23 @@
       <section>
         <h1>簡易 HTML 與 CSS</h1>
       </section>
+      <section>
+        <div class="h-5/8 inline-block">
+          <video controls width="" height="100%">
+            <source src="@/assets/video/switchDesign.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <br />
+        <a target="_blank" href="https://codepen.io/jh3y/pen/LYgjpYZ">codepen</a>
+      </section>
       <ChapterBoxModel></ChapterBoxModel>
       <ChapterElement></ChapterElement>
       <ChapterPosition></ChapterPosition>
       <ChapterPitfalls></ChapterPitfalls>
 
-      <RevealSectionExample></RevealSectionExample>
+      <!-- <RevealSectionExample></RevealSectionExample> -->
 
-      <section data-markdown data-separator="------" data-separator-vertical="----">
+      <!-- <section data-markdown data-separator="------" data-separator-vertical="----">
         <textarea data-template>
           # 可
           ## 可
@@ -25,7 +34,7 @@
           ##### 可
           ###### 可
         </textarea>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
