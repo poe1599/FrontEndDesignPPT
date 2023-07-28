@@ -10,31 +10,27 @@
         <h1>簡易 HTML 與 CSS</h1>
       </section>
       <section>
-        <div class="h-5/8 inline-block">
-          <video controls width="" height="100%">
-            <source src="@/assets/video/switchDesign.mp4" type="video/mp4" />
-          </video>
+        <div class="flex items-center justify-center gap-32">
+          <div>
+            <h2>Designer VS Programmer</h2>
+            <a target="_blank" class="text-3xl" href="https://codepen.io/jh3y/pen/LYgjpYZ">codepen</a>
+          </div>
+          <div class="">
+            <video controls width="" height="" class="">
+              <source src="@/assets/video/switchDesign.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-        <br />
-        <a target="_blank" href="https://codepen.io/jh3y/pen/LYgjpYZ">codepen</a>
       </section>
       <ChapterBoxModel></ChapterBoxModel>
       <ChapterElement></ChapterElement>
       <ChapterPosition></ChapterPosition>
       <ChapterPitfalls></ChapterPitfalls>
+      <section>
+        <h2>To Be Continued...</h2>
+      </section>
 
       <!-- <RevealSectionExample></RevealSectionExample> -->
-
-      <!-- <section data-markdown data-separator="------" data-separator-vertical="----">
-        <textarea data-template>
-          # 可
-          ## 可
-          ### 可
-          #### 可
-          ##### 可
-          ###### 可
-        </textarea>
-      </section> -->
     </div>
   </div>
 </template>
@@ -52,7 +48,7 @@ import RevealHighlight from 'reveal.js/plugin/highlight/highlight.js'
 import Markdown from 'reveal.js/plugin/markdown/markdown.js'
 // vue
 import { onMounted } from 'vue'
-import RevealSectionExample from './components/RevealSectionExample.vue'
+// import RevealSectionExample from './components/RevealSectionExample.vue'
 // chapters
 import ChapterBoxModel from '@/chapters/boxModel/index.vue'
 import ChapterElement from '@/chapters/element/index.vue'
