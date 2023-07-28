@@ -5,6 +5,32 @@
     </section>
     <section>
       <h3>Position</h3>
+      <ul>
+        <li>
+          static（預設值）: <br />
+          預設的定位屬性, 此時元素上的offset屬性無效
+        </li>
+        <li>
+          relative （相對定位）: <br />
+          保有原始空間, 根據offset屬性進行位移
+        </li>
+        <li>
+          absolute（絕對定位）: <br />
+          不佔據空間, 根據position值不是static的最接近祖先元素為原點進行位移
+        </li>
+        <li>
+          fixed（固定定位）: <br />
+          根據視窗原點進行位移<br />
+          But!! 如果祖先元素有 transform 屬性, 則根據該元素進行位移
+        </li>
+        <li>
+          sticky（沾黏）: <br />
+          一般狀況下位置不變, 當達成條件時依照滾動容器(overflow)進行位移
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Position</h3>
       <div class="flex justify-center items-center gap-16 text-left">
         <div class="container">
           <p>
@@ -62,32 +88,6 @@
         </div>
       </div>
     </section>
-    <section>
-      <h3>Position</h3>
-      <ul>
-        <li>
-          static（預設值）: <br />
-          預設的定位屬性, 此時元素上的offset屬性無效
-        </li>
-        <li>
-          relative （相對定位）: <br />
-          保有原始空間, 根據offset屬性進行位移
-        </li>
-        <li>
-          absolute（絕對定位）: <br />
-          不佔據空間, 根據position值不是static的最接近祖先元素為原點進行位移
-        </li>
-        <li>
-          fixed（固定定位）: <br />
-          根據視窗原點進行位移<br />
-          But!! 如果祖先元素有 transform 屬性, 則根據該元素進行位移
-        </li>
-        <li>
-          sticky（沾黏）: <br />
-          一般狀況下位置不變, 當達成條件時依照滾動容器(overflow)進行位移
-        </li>
-      </ul>
-    </section>
   </section>
 </template>
 <script>
@@ -113,6 +113,7 @@ const redBoxStyle = reactive({
   width: 50vw;
   height: 60vh;
   text-align: left;
+  background: #fdf6e8;
   border: 1px solid;
 }
 

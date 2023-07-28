@@ -232,6 +232,6 @@ const toggleOutline = () => {
 .reveal pre.xxxx {
   margin: 0;
   width: 60vw;
-  height: 100vh;
+  height: 90vh;
 }
 </style>
